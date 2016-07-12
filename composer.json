@@ -1,5 +1,5 @@
 {
-    "name": "shashank19gaurav/instapaper-oauth-api",
+    "name": "shashank19gaurav/instapaper-api-client",
     "description": "A PHP Composer library for working with Instapaper's OAuth API",
     "type": "library",
     "license": "MIT",
