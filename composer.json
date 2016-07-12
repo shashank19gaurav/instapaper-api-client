@@ -1,0 +1,21 @@
+{
+    "name": "shashank19gaurav/instapaper-oauth-api",
+    "description": "A PHP Composer library for working with Instapaper's OAuth API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shashank Gaurav",
+            "email": "shashank19gaurav@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InstapaperAPI\\": "src/"
+        }
+    }
+}
