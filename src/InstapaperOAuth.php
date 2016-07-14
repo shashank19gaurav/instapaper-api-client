@@ -75,7 +75,11 @@ class InstapaperOAuth {
 		$parameters['x_auth_mode'] = 'client_auth';
 		$request = $this->oAuthRequest($this->host . "oauth/access_token", 'POST', $parameters);
 		$token = \OAuthUtil::parse_parameters($request);    
-		$this->token = new \OAuthConsumer($token['oauth_token'], $token['oauth_token_secret']);
+        if(array_key_exists('oauth_token', $token)) {
+            $this->token = new \OAuthConsumer($token['oauth_token'], $token['oauth_token_secret']);
+        } else {
+            $this->token = null;
+        }		
 		return $token;
 	}
 
